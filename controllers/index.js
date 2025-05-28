@@ -42,20 +42,7 @@ const googleFailedLogin = async (req, res) => {
   }
 };
 
-const googleAuthenticate = (req, res, next) => {
-  try {
-    passport.authenticate('google', {
-      session: false,
-      scope: ['email', 'profile'],
-    })(req, res, next);
-  } catch (error) {
-    console.log(error);
-    return res.json({ message: info.message });
-  }
-};
-
 module.exports = {
-  googleAuthenticate,
   googleFailedLogin,
   googleCallbackLogin,
 };
