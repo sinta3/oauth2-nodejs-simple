@@ -57,12 +57,6 @@ to initiate Google authentication.
 
 ### Code Quality
 
-- Run ESLint:
-
-```bash
-npx eslint .
-```
-
 - Run Prettier formatting:
 
 ```bash
